@@ -1,0 +1,29 @@
+{
+  "name": "buffer-transform-using-stream",
+  "description": "Easily transform Buffer instances using streams",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "author": "Raymond Hammarling",
+  "scripts": {
+    "lint": "eslint src/ test/",
+    "test": "mocha --compilers js:babel/register,es6:babel/register,es6.js:babel/register test/",
+    "build": "babel  -d lib/ src/",
+    "pretest": "npm run lint",
+    "prebuild": "npm run test",
+    "watch": "onchange src/ -- npm run build && echo Done",
+    "dev": "npm run watch",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "babel": "^5.8.21",
+    "chai": "^3.2.0",
+    "eslint": "^1.1.0",
+    "mocha": "^2.2.5",
+    "onchange": "^1.1.0"
+  },
+  "dependencies": {
+    "concat-stream": "^1.5.0",
+    "streamifier": "^0.1.1"
+  }
+}
