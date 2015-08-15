@@ -1,7 +1,7 @@
 {
   "name": "buffer-transform-using-stream",
   "description": "Easily transform Buffer instances using streams",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "main": "lib/index.js",
   "author": "Raymond Hammarling",
